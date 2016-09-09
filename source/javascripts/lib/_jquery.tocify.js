@@ -70,7 +70,7 @@
 
             // **showEffectSpeed**: Accepts Number (milliseconds) or String: "slow", "medium", or "fast"
             // The time duration of the show animation
-            showEffectSpeed: "medium",
+            showEffectSpeed: "fast",
 
             // **hideEffect**: Accepts String: "none", "fadeOut", "hide", or "slideUp"
             // Used to hide any of the table of contents nested items
@@ -78,7 +78,7 @@
 
             // **hideEffectSpeed**: Accepts Number (milliseconds) or String: "slow", "medium", or "fast"
             // The time duration of the hide animation
-            hideEffectSpeed: "medium",
+            hideEffectSpeed: "fast",
 
             // **smoothScroll**: Accepts a boolean: true or false
             // Determines if a jQuery animation should be used to scroll to specific table of contents items on the page
@@ -86,7 +86,7 @@
 
             // **smoothScrollSpeed**: Accepts Number (milliseconds) or String: "slow", "medium", or "fast"
             // The time duration of the smoothScroll animation
-            smoothScrollSpeed: "medium",
+            smoothScrollSpeed: "fast",
 
             // **scrollTo**: Accepts Number (pixels)
             // The amount of space between the top of page and the selected table of contents item after the page has been scrolled

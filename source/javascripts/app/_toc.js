@@ -17,7 +17,7 @@
       theme: 'none',
       smoothScroll: false,
       showEffectSpeed: 0,
-      hideEffectSpeed: 180,
+      hideEffectSpeed: 90,
       ignoreSelector: '.toc-ignore',
       highlightOffset: 60,
       scrollTo: -1,

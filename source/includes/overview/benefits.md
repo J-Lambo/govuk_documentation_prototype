@@ -16,11 +16,12 @@ Features of the PaaS platform currently include:
 *   language support as provided by the [default Cloud Foundry buildpacks](http://docs.cloudfoundry.org/buildpacks/)
 *   ability to stream application logs to Software as a Service logging platforms
 
-### Coding in the open
+<h3 class="toc-ignore">Coding in the open</h3>
 
 We are making all new source code open and reusable at PaaS. You can use our source code if you want to prioritise different backing services (any networked attached service that your application consumes to do its job, eg a MongoDB instance or a PostgreSQL database).
 
-### Characteristics of PaaS
+<h3 class="toc-ignore">Characteristics of PaaS</h3>
+
 This table summarises the core characteristics of the PaaS offering.
 
 |PaaS characteristic| Meaning|

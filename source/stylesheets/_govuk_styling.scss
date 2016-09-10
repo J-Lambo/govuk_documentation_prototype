@@ -23,7 +23,9 @@ fieldset{
 }
 
 .tocify-wrapper {
+	//background: $highlight-colour;
 	position: fixed;
+	overflow-y: scroll;
 	top: 107px; //below GOV.UK header
 	top: 63px; //below GOV.UK header
 	width: 319px;
@@ -40,6 +42,7 @@ fieldset{
     	transition: none;
 		font-weight: bold;
 		color: #005ea5;
+		line-height: 30px;
 	}
 
 	.tocify-header ul ul{
@@ -48,6 +51,12 @@ fieldset{
 			padding-right: 5px;
 		}
 
+	}
+
+	.tocify-header{
+		border-bottom: 1px solid $border-colour;
+		padding-bottom: 20px;
+		margin-bottom: 10px;
 	}
 
 	.docs-name {
@@ -75,19 +84,27 @@ fieldset{
 	}
 
 	.tocify-subheader {
+
+		display: block;
+
     	background: $grey-4;
-    	background: $white;
+    	background: transparent;
 		.tocify-item>a{
 			@include core-16;
 			font-weight: normal;
 			line-height: inherit !important;
 		}
+
+		.tocify-item > a {
+			padding-left: 15px;
+		}
+
 	}
 
-	// 3rd level TOC items
+
 	.tocify-header > .tocify-item a::after{
 	    float: right;
-	    content: "\203A";		
+	    //content: "\203A";		
 	}
 
     .search{
@@ -95,7 +112,7 @@ fieldset{
     	input{
     		padding: 10px 0 10px 20px;
     		margin: 10px;
-    		width: 309px;
+    		width: 294px;
     		color: $text-colour;
     		border: 0;
     		border: 2px solid $grey-1;

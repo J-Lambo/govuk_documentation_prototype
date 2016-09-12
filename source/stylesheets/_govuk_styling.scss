@@ -10,6 +10,43 @@ fieldset{
 	padding: 0;
 }
 
+
+.local-navigation{
+
+	top: 63px;
+    padding: 0 30px;
+    line-height: 2;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #bfc1c3;
+    z-index: 100;
+    background: white;
+
+	ul{
+		@extend %contain-floats;
+	}
+
+	li{
+		display: block;
+		margin-right: 60px;
+		float: left;
+		a{
+			color: $text-colour;
+			//text-decoration: none;
+			font-size: 16px;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.selected a{
+		font-weight: bold;
+		text-decoration: none;
+	}
+}
+
 .breadcrumbs{
 	margin-left: $gutter;
 }
@@ -24,8 +61,7 @@ fieldset{
 
 .tocify-wrapper {
 	position: fixed;
-	top: 107px; //below GOV.UK header
-	top: 63px; //below GOV.UK header
+	top: 103px; //below GOV.UK header
 	width: 319px;
 	@include core-16;
     border-right: 1px solid $border-colour;
@@ -364,7 +400,7 @@ input:focus {
     z-index: 100;
 }
 .page-wrapper .content{
-	padding-top: 60px;
+	padding-top: 100px;
 	padding-left: 30px;
 }
 

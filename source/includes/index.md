@@ -1,5 +1,7 @@
 # GOV.UK Frontend
 
+<span class="updated">Last updated: two weeks ago</span>
+
  GOV.UK Frontend is the code to build a service that looks and works like GOV.UK. 
 
  It is being building by Government Digital Service (GDS). 

@@ -1,6 +1,6 @@
-# Deploying backing services
+# Contribution
 
-## Services overview
+## How to run this code's tests
 
 Your application probably relies on backing services such as a database, an email delivery service or a monitoring system.
 

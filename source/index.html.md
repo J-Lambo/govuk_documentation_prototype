@@ -1,5 +1,5 @@
 ---
-title: Government PaaS Documentation
+title: GOV.UK Frontend
 
 language_tabs:
   - bash
@@ -19,27 +19,22 @@ includes:
   - overview/benefits
   - overview/technology
   - overview/pricing
+  - overview/patterns
   - getting_started/index
-  - getting_started/before_you_start
-  - getting_started/quick_setup_guide
-  - getting_started/privacy
-  - getting_started/limitations
-  - deploying_apps/index
-  - deploying_apps/excluding_files
-  - deploying_apps/env_variables
-  - deploying_apps/orgs_spaces_targets
-  - deploying_apps/deploying_static_sites
-  - deploying_apps/deploying_rails
-  - deploying_apps/deploying_node_js
-  - deploying_apps/deploying_django
-  - deploying_apps/production_checklist
-  - deploying_services/index
-  - deploying_services/postgres
-  - managing_apps/index
-  - managing_apps/scaling
-  - managing_apps/quotas
-  - managing_apps/logging
-  - managing_apps/redirect_all_traffic
+  - getting_started/download_code
+  - getting_started/load_code
+  - getting_started/run_code
+  - code_structure/index
+  - code_structure/excluding_files
+  - code_structure/env_variables
+  - code_structure/orgs_spaces_targets
+  - code_structure/deploying_static_sites
+  - code_structure/deploying_rails
+  - code_structure/deploying_node_js
+  - code_structure/deploying_django
+  - code_structure/production_checklist
+  - contribution/index
+  - contribution/postgres
 
 search: true
 ---

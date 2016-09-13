@@ -193,6 +193,13 @@ aside {
     }
 }
 
+// colour snippet boxes
+
+#code {
+	background-color: #DEE0E2;
+}
+
+.content aside.code{ background-color: #DEE0E2}
 .content aside.notice{ background-color: $light-blue-25}
 .content aside.warning{ background-color: $mellow-red-50}
 .content aside.success{ background-color: $grass-green-25}

@@ -1,4 +1,4 @@
-# Government PaaS
+# GOV.UK Frontend
 
  <aside class="warning">
 This is a test version of a new documentation format and is **not** the current official PaaS documentation. This version may not be up to date and should not be relied on. Please go to <a href="https://government-paas-developer-docs.readthedocs.io/en/latest/">https://government-paas-developer-docs.readthedocs.io/en/latest/</a> for the official version.

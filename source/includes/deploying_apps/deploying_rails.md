@@ -3,13 +3,13 @@
 This section explains minimal steps for deploying a basic Rails app. For full details of how to deploy Ruby on Rails apps, see the official Cloud Foundry guide [Getting Started Deploying Ruby on Rails Apps](http://docs.cloudfoundry.org/buildpacks/ruby/gsg-ror.html). 
 
 
-These steps assume you have already carried out the setup process explained in the [Quick setup guide](/govuk_documentation_prototype/#quick-setup-guide) section.
+These steps assume you have already carried out the setup process explained in the [Quick setup guide](#quick-setup-guide) section.
 
 Note that the only database service currently supported by PaaS is PostgreSQL. If your Rails app requires a database, it must be able to work with PostgreSQL.
 
 1. Check out your Rails app to a local folder.
 
-1. [Exclude files ignored by Git](/govuk_documentation_prototype/#excluding-files).
+1. [Exclude files ignored by Git](#excluding-files).
 
 1. If you're using Rails 4, [add the `rails_12factor` gem](https://github.com/heroku/rails_12factor#install) for better logging. Rails 5 has this functionality built in by default.
 
@@ -47,7 +47,7 @@ Note that the only database service currently supported by PaaS is PostgreSQL. I
     cf push --no-start APPNAME
     ```
 
-1. Set any additional [environment variables](/govuk_documentation_prototype/#environment-variables)
+1. Set any additional [environment variables](#environment-variables)
    required by your app. For example:
 
     ```
@@ -56,7 +56,7 @@ Note that the only database service currently supported by PaaS is PostgreSQL. I
 
     where VARIABLE is a unique name for the variable, and `value` is the value to set.
 
-1. If required, [create a PostgreSQL backing service and bind it to your app](/govuk_documentation_prototype/#using-a-postgresql-service). 
+1. If required, [create a PostgreSQL backing service and bind it to your app](#using-a-postgresql-service). 
     The Cloud Foundry buildpack for Ruby automatically gets the details of the first available PostgreSQL service from the ``VCAP_SERVICES`` environment variable and sets the Ruby DATABASE_URL accordingly.
 
     To enable Rails support for database migrations, you may wish to create a `Procfile` in the same directory as your `manifest.yml` and `Gemfile`.

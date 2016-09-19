@@ -4,14 +4,14 @@ This section explains how to deploy an app using the Django framework. You may a
 
 Note that the only database service currently supported by PaaS is PostgreSQL. If your Django app requires a database, it must be able to work with PostgreSQL.
 
-These steps assume you have already carried out the setup process explained in the [Quick setup guide](/govuk_documentation_prototype/#quick-setup-guide) section.
+These steps assume you have already carried out the setup process explained in the [Quick setup guide](#quick-setup-guide) section.
 
 If you are just getting started learning CloudFoundry, you can use the sandbox space by running: ``cf target -s sandbox``
 
 1. Check out your Django app to a local folder.
 
 2. Add `*.pyc` and `local_settings.py` to your `.gitignore`, file, then 
-   [exclude files ignored by Git](/govuk_documentation_prototype/#excluding-files) so Cloud Foundry will ignore them too.
+   [exclude files ignored by Git](#excluding-files) so Cloud Foundry will ignore them too.
 
 3. Tell Cloud Foundry which Python runtime to use by creating a `runtime.txt`   file in the root of the local folder. The contents of the file should  
    be:
@@ -98,7 +98,7 @@ If you are just getting started learning CloudFoundry, you can use the sandbox s
 
     The `memory` line tells the PaaS how much memory to allocate to the app.
 
-10. If your app requires a database, [create a PostgreSQL backing service and bind it to your app](/govuk_documentation_prototype/#using-a-postgresql-service). Then see the section on PostgreSQL setup below.
+10. If your app requires a database, [create a PostgreSQL backing service and bind it to your app](#using-a-postgresql-service). Then see the section on PostgreSQL setup below.
 
 11. To push your app, do:
 

@@ -6,7 +6,7 @@ Government PaaS is currently in private beta.
 
 If your organisation is taking part in the private beta and you need an account, or you'd like to find about taking part in the beta, please contact us by emailing [gov-uk-paas-support@digital.cabinet-office.gov.uk](mailto:gov-uk-paas-support@digital.cabinet-office.gov.uk).
 
-In order to provide you with an account, we need to store some personal data about you. Please see [our Privacy Policy](/govuk_documentation_prototype/#privacy-policy) for details.
+In order to provide you with an account, we need to store some personal data about you. Please see [our Privacy Policy](#privacy-policy) for details.
 
 ### Setting up the command line
 
@@ -48,7 +48,7 @@ Once logged in, you can see the available commands by running ```cf```.
 
 ### Deploying a test app
 
-To practice deploying an app, try following the [deploying a static site](/govuk_documentation_prototype/#deploying-a-static-site) process.
+To practice deploying an app, try following the [deploying a static site](#deploying-a-static-site) process.
 
 
 

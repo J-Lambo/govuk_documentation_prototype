@@ -3,7 +3,7 @@
 <p>This section explains how to create and deploy a static HTML page. It&rsquo;s
 worth testing that you can carry out this process before you try to deploy a more complex app.</p>
 
-<p>When you deploy an app, you must select a combination of an organisation and a space: this is called the <strong>target</strong> (see <a href="/govuk_documentation_prototype/#orgs-spaces-and-targets">Orgs, spaces and targets</a> for more information).</p>
+<p>When you deploy an app, you must select a combination of an organisation and a space: this is called the <strong>target</strong> (see <a href="#orgs-spaces-and-targets">Orgs, spaces and targets</a> for more information).</p>
 
 <p>We have provided a <code class="prettyprint">sandbox</code> space for you to use for learning about the PaaS. You may want to target the sandbox while you are testing by running:</p>
 
@@ -11,7 +11,7 @@ worth testing that you can carry out this process before you try to deploy a mor
 
 <p>It&rsquo;s also important to realise that if you deploy an app using the same name and target as an existing app, the original will be replaced. If you are not sure about where to deploy your app, consult the rest of your team.</p>
 
-<p>These steps assume you have already carried out the setup process explained in the <a href="/govuk_documentation_prototype/#quick-setup-guide">Quick setup guide</a> section.</p>
+<p>These steps assume you have already carried out the setup process explained in the <a href="#quick-setup-guide">Quick setup guide</a> section.</p>
 
 <ol>
 <li><p>In an empty directory, create an <code class="prettyprint">index.html</code> file.</p></li>

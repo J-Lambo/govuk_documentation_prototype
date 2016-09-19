@@ -6,7 +6,7 @@
 
 <p>If your organisation is taking part in the private beta and you need an account, or you&rsquo;d like to find about taking part in the beta, please contact us by emailing <a href="mailto:gov-uk-paas-support@digital.cabinet-office.gov.uk">gov-uk-paas-support@digital.cabinet-office.gov.uk</a>.</p>
 
-<p>In order to provide you with an account, we need to store some personal data about you. Please see <a href="/govuk_documentation_prototype/#privacy-policy">our Privacy Policy</a> for details.</p>
+<p>In order to provide you with an account, we need to store some personal data about you. Please see <a href="#privacy-policy">our Privacy Policy</a> for details.</p>
 
 <h3 id="setting-up-the-command-line">Setting up the command line</h3>
 
@@ -41,4 +41,4 @@
 
 <h3 id="deploying-a-test-app"> Deploying a test app</h3>
 
-<p>To practice deploying an app, try following the <a href="/govuk_documentation_prototype/#deploying-a-static-site">deploying a static site</a> process.</p>
+<p>To practice deploying an app, try following the <a href="#deploying-a-static-site">deploying a static site</a> process.</p>

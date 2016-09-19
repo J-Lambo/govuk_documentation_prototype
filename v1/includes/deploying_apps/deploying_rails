@@ -2,13 +2,13 @@
 
 <p>This section explains minimal steps for deploying a basic Rails app. For full details of how to deploy Ruby on Rails apps, see the official Cloud Foundry guide <a href="http://docs.cloudfoundry.org/buildpacks/ruby/gsg-ror.html">Getting Started Deploying Ruby on Rails Apps</a>. </p>
 
-<p>These steps assume you have already carried out the setup process explained in the <a href="/govuk_documentation_prototype/#quick-setup-guide">Quick setup guide</a> section.</p>
+<p>These steps assume you have already carried out the setup process explained in the <a href="#quick-setup-guide">Quick setup guide</a> section.</p>
 
 <p>Note that the only database service currently supported by PaaS is PostgreSQL. If your Rails app requires a database, it must be able to work with PostgreSQL.</p>
 
 <ol>
 <li><p>Check out your Rails app to a local folder.</p></li>
-<li><p><a href="/govuk_documentation_prototype/#excluding-files">Exclude files ignored by Git</a>.</p></li>
+<li><p><a href="#excluding-files">Exclude files ignored by Git</a>.</p></li>
 <li><p>If you&rsquo;re using Rails 4, <a href="https://github.com/heroku/rails_12factor#install">add the <code class="prettyprint">rails_12factor</code> gem</a> for better logging. Rails 5 has this functionality built in by default.</p></li>
 <li><p>Create a manifest.yml file in the folder where you checked out your app.</p>
 <pre class="highlight plaintext"><code>---
@@ -34,13 +34,13 @@ applications:
 <p>If your app needs a backing service, upload it but do not start it:</p>
 <pre class="highlight plaintext"><code>cf push --no-start APPNAME
 </code></pre></li>
-<li><p>Set any additional <a href="/govuk_documentation_prototype/#environment-variables">environment variables</a>
+<li><p>Set any additional <a href="#environment-variables">environment variables</a>
 required by your app. For example:</p>
 <pre class="highlight plaintext"><code>cf set-env APPNAME VARIABLE `value`
 </code></pre>
 
 <p>where VARIABLE is a unique name for the variable, and <code class="prettyprint">value</code> is the value to set.</p></li>
-<li><p>If required, <a href="/govuk_documentation_prototype/#using-a-postgresql-service">create a PostgreSQL backing service and bind it to your app</a>. 
+<li><p>If required, <a href="#using-a-postgresql-service">create a PostgreSQL backing service and bind it to your app</a>. 
 The Cloud Foundry buildpack for Ruby automatically gets the details of the first available PostgreSQL service from the <code class="prettyprint">VCAP_SERVICES</code> environment variable and sets the Ruby DATABASE_URL accordingly.</p>
 
 <p>To enable Rails support for database migrations, you may wish to create a <code class="prettyprint">Procfile</code> in the same directory as your <code class="prettyprint">manifest.yml</code> and <code class="prettyprint">Gemfile</code>.</p>

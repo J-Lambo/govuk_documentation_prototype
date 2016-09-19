@@ -33,6 +33,6 @@
 <ul>
 <li>Your app should not write to local storage. Cloud Foundry local storage is ephemeral and can be deleted at any time.</li>
 <li>You may need to set environment variables for your app to work. All configuration information should be stored in environment variables, not in the code. </li>
-<li>Instances will be restarted if they <a href="/govuk_documentation_prototype/#quotas">exceed memory limits</a>.</li>
-<li>Proper <a href="/govuk_documentation_prototype/#logging">logging</a> might require special libraries/configuration for your app.</li>
+<li>Instances will be restarted if they <a href="#quotas">exceed memory limits</a>.</li>
+<li>Proper <a href="#logging">logging</a> might require special libraries/configuration for your app.</li>
 </ul>

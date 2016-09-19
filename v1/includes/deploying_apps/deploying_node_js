@@ -4,7 +4,7 @@
 
 <p>Note that the only database service currently supported by PaaS is PostgreSQL. If your Node.js app requires a database, it must be able to work with PostgreSQL.</p>
 
-<p>These instructions assume you have already carried out the setup process explained in the <a href="/govuk_documentation_prototype/#quick-setup-guide">Quick setup guide</a> section.</p>
+<p>These instructions assume you have already carried out the setup process explained in the <a href="#quick-setup-guide">Quick setup guide</a> section.</p>
 
 <p>This is the code for the example app we are going to use. It is a basic web server that responds with a &lsquo;Hello World&rsquo; message.</p>
 <pre class="highlight plaintext"><code>    const http = require('http');
@@ -64,9 +64,9 @@ ready to start the app, run <code class="prettyprint">cf start APPNAME</code>.</
 
 <h3 id="postgresql-setup-with-node-js">PostgreSQL setup with Node.js</h3>
 
-<p>If your app depends on <a href="/govuk_documentation_prototype/#deploying_services">backing services</a> such as PostgreSQL, it will need to parse the <code class="prettyprint">VCAP_SERVICES</code> environment variable to get required details, such as service URLs and credentials.</p>
+<p>If your app depends on <a href="#deploying_services">backing services</a> such as PostgreSQL, it will need to parse the <code class="prettyprint">VCAP_SERVICES</code> environment variable to get required details, such as service URLs and credentials.</p>
 
-<p>You must create the service and bind it to your Node.js app as described in the <a href="/govuk_documentation_prototype/#deploying_services">Deploying Services</a> section.</p>
+<p>You must create the service and bind it to your Node.js app as described in the <a href="#deploying_services">Deploying Services</a> section.</p>
 
 <p>You can use the <a href="https://www.npmjs.com/package/cfenv">cfenv</a> module to assist with parsing the environment variables.</p>
 

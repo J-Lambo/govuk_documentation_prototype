@@ -374,7 +374,7 @@ This is a test version of a new documentation format and is <strong>not</strong>
 
 <p>If your organisation is taking part in the private beta and you need an account, or you&rsquo;d like to find about taking part in the beta, please contact us by emailing <a href="mailto:gov-uk-paas-support@digital.cabinet-office.gov.uk">gov-uk-paas-support@digital.cabinet-office.gov.uk</a>.</p>
 
-<p>In order to provide you with an account, we need to store some personal data about you. Please see <a href="/govuk_documentation_prototype/#privacy-policy">our Privacy Policy</a> for details.</p>
+<p>In order to provide you with an account, we need to store some personal data about you. Please see <a href="#privacy-policy">our Privacy Policy</a> for details.</p>
 
 <h3 id="setting-up-the-command-line">Setting up the command line</h3>
 
@@ -409,7 +409,7 @@ This is a test version of a new documentation format and is <strong>not</strong>
 
 <h3 id="deploying-a-test-app"> Deploying a test app</h3>
 
-<p>To practice deploying an app, try following the <a href="/govuk_documentation_prototype/#deploying-a-static-site">deploying a static site</a> process.</p>
+<p>To practice deploying an app, try following the <a href="#deploying-a-static-site">deploying a static site</a> process.</p>
 
           <h2 id="privacy-policy">Privacy policy</h2>
 
@@ -568,8 +568,8 @@ This is a test version of a new documentation format and is <strong>not</strong>
 <ul>
 <li>Your app should not write to local storage. Cloud Foundry local storage is ephemeral and can be deleted at any time.</li>
 <li>You may need to set environment variables for your app to work. All configuration information should be stored in environment variables, not in the code. </li>
-<li>Instances will be restarted if they <a href="/govuk_documentation_prototype/#quotas">exceed memory limits</a>.</li>
-<li>Proper <a href="/govuk_documentation_prototype/#logging">logging</a> might require special libraries/configuration for your app.</li>
+<li>Instances will be restarted if they <a href="#quotas">exceed memory limits</a>.</li>
+<li>Proper <a href="#logging">logging</a> might require special libraries/configuration for your app.</li>
 </ul>
 
           <h2 id="excluding-files">Excluding files</h2>
@@ -667,7 +667,7 @@ This is a test version of a new documentation format and is <strong>not</strong>
 <p>This section explains how to create and deploy a static HTML page. It&rsquo;s
 worth testing that you can carry out this process before you try to deploy a more complex app.</p>
 
-<p>When you deploy an app, you must select a combination of an organisation and a space: this is called the <strong>target</strong> (see <a href="/govuk_documentation_prototype/#orgs-spaces-and-targets">Orgs, spaces and targets</a> for more information).</p>
+<p>When you deploy an app, you must select a combination of an organisation and a space: this is called the <strong>target</strong> (see <a href="#orgs-spaces-and-targets">Orgs, spaces and targets</a> for more information).</p>
 
 <p>We have provided a <code class="prettyprint">sandbox</code> space for you to use for learning about the PaaS. You may want to target the sandbox while you are testing by running:</p>
 
@@ -675,7 +675,7 @@ worth testing that you can carry out this process before you try to deploy a mor
 
 <p>It&rsquo;s also important to realise that if you deploy an app using the same name and target as an existing app, the original will be replaced. If you are not sure about where to deploy your app, consult the rest of your team.</p>
 
-<p>These steps assume you have already carried out the setup process explained in the <a href="/govuk_documentation_prototype/#quick-setup-guide">Quick setup guide</a> section.</p>
+<p>These steps assume you have already carried out the setup process explained in the <a href="#quick-setup-guide">Quick setup guide</a> section.</p>
 
 <ol>
 <li><p>In an empty directory, create an <code class="prettyprint">index.html</code> file.</p></li>
@@ -728,13 +728,13 @@ cf push
 
 <p>This section explains minimal steps for deploying a basic Rails app. For full details of how to deploy Ruby on Rails apps, see the official Cloud Foundry guide <a href="http://docs.cloudfoundry.org/buildpacks/ruby/gsg-ror.html">Getting Started Deploying Ruby on Rails Apps</a>. </p>
 
-<p>These steps assume you have already carried out the setup process explained in the <a href="/govuk_documentation_prototype/#quick-setup-guide">Quick setup guide</a> section.</p>
+<p>These steps assume you have already carried out the setup process explained in the <a href="#quick-setup-guide">Quick setup guide</a> section.</p>
 
 <p>Note that the only database service currently supported by PaaS is PostgreSQL. If your Rails app requires a database, it must be able to work with PostgreSQL.</p>
 
 <ol>
 <li><p>Check out your Rails app to a local folder.</p></li>
-<li><p><a href="/govuk_documentation_prototype/#excluding-files">Exclude files ignored by Git</a>.</p></li>
+<li><p><a href="#excluding-files">Exclude files ignored by Git</a>.</p></li>
 <li><p>If you&rsquo;re using Rails 4, <a href="https://github.com/heroku/rails_12factor#install">add the <code class="prettyprint">rails_12factor</code> gem</a> for better logging. Rails 5 has this functionality built in by default.</p></li>
 <li><p>Create a manifest.yml file in the folder where you checked out your app.</p>
 <pre class="highlight plaintext"><code>---
@@ -760,13 +760,13 @@ applications:
 <p>If your app needs a backing service, upload it but do not start it:</p>
 <pre class="highlight plaintext"><code>cf push --no-start APPNAME
 </code></pre></li>
-<li><p>Set any additional <a href="/govuk_documentation_prototype/#environment-variables">environment variables</a>
+<li><p>Set any additional <a href="#environment-variables">environment variables</a>
 required by your app. For example:</p>
 <pre class="highlight plaintext"><code>cf set-env APPNAME VARIABLE `value`
 </code></pre>
 
 <p>where VARIABLE is a unique name for the variable, and <code class="prettyprint">value</code> is the value to set.</p></li>
-<li><p>If required, <a href="/govuk_documentation_prototype/#using-a-postgresql-service">create a PostgreSQL backing service and bind it to your app</a>. 
+<li><p>If required, <a href="#using-a-postgresql-service">create a PostgreSQL backing service and bind it to your app</a>. 
 The Cloud Foundry buildpack for Ruby automatically gets the details of the first available PostgreSQL service from the <code class="prettyprint">VCAP_SERVICES</code> environment variable and sets the Ruby DATABASE_URL accordingly.</p>
 
 <p>To enable Rails support for database migrations, you may wish to create a <code class="prettyprint">Procfile</code> in the same directory as your <code class="prettyprint">manifest.yml</code> and <code class="prettyprint">Gemfile</code>.</p>
@@ -813,7 +813,7 @@ during asset compilation. (For an example, see <a href="https://github.com/18F/m
 
 <p>Note that the only database service currently supported by PaaS is PostgreSQL. If your Node.js app requires a database, it must be able to work with PostgreSQL.</p>
 
-<p>These instructions assume you have already carried out the setup process explained in the <a href="/govuk_documentation_prototype/#quick-setup-guide">Quick setup guide</a> section.</p>
+<p>These instructions assume you have already carried out the setup process explained in the <a href="#quick-setup-guide">Quick setup guide</a> section.</p>
 
 <p>This is the code for the example app we are going to use. It is a basic web server that responds with a &lsquo;Hello World&rsquo; message.</p>
 <pre class="highlight plaintext"><code>    const http = require('http');
@@ -873,9 +873,9 @@ ready to start the app, run <code class="prettyprint">cf start APPNAME</code>.</
 
 <h3 id="postgresql-setup-with-node-js">PostgreSQL setup with Node.js</h3>
 
-<p>If your app depends on <a href="/govuk_documentation_prototype/#deploying_services">backing services</a> such as PostgreSQL, it will need to parse the <code class="prettyprint">VCAP_SERVICES</code> environment variable to get required details, such as service URLs and credentials.</p>
+<p>If your app depends on <a href="#deploying_services">backing services</a> such as PostgreSQL, it will need to parse the <code class="prettyprint">VCAP_SERVICES</code> environment variable to get required details, such as service URLs and credentials.</p>
 
-<p>You must create the service and bind it to your Node.js app as described in the <a href="/govuk_documentation_prototype/#deploying_services">Deploying Services</a> section.</p>
+<p>You must create the service and bind it to your Node.js app as described in the <a href="#deploying_services">Deploying Services</a> section.</p>
 
 <p>You can use the <a href="https://www.npmjs.com/package/cfenv">cfenv</a> module to assist with parsing the environment variables.</p>
 
@@ -917,14 +917,14 @@ ready to start the app, run <code class="prettyprint">cf start APPNAME</code>.</
 
 <p>Note that the only database service currently supported by PaaS is PostgreSQL. If your Django app requires a database, it must be able to work with PostgreSQL.</p>
 
-<p>These steps assume you have already carried out the setup process explained in the <a href="/govuk_documentation_prototype/#quick-setup-guide">Quick setup guide</a> section.</p>
+<p>These steps assume you have already carried out the setup process explained in the <a href="#quick-setup-guide">Quick setup guide</a> section.</p>
 
 <p>If you are just getting started learning CloudFoundry, you can use the sandbox space by running: <code class="prettyprint">cf target -s sandbox</code></p>
 
 <ol>
 <li><p>Check out your Django app to a local folder.</p></li>
 <li><p>Add <code class="prettyprint">*.pyc</code> and <code class="prettyprint">local_settings.py</code> to your <code class="prettyprint">.gitignore</code>, file, then 
-<a href="/govuk_documentation_prototype/#excluding-files">exclude files ignored by Git</a> so Cloud Foundry will ignore them too.</p></li>
+<a href="#excluding-files">exclude files ignored by Git</a> so Cloud Foundry will ignore them too.</p></li>
 <li><p>Tell Cloud Foundry which Python runtime to use by creating a <code class="prettyprint">runtime.txt</code>   file in the root of the local folder. The contents of the file should<br>
 be:
 <code class="prettyprint">
@@ -992,7 +992,7 @@ applications:
 <p>Replace <code class="prettyprint">my-django-app</code> with a unique name for your app. (You can use <code class="prettyprint">cf apps</code> to see apps which already exist).</p>
 
 <p>The <code class="prettyprint">memory</code> line tells the PaaS how much memory to allocate to the app.</p></li>
-<li><p>If your app requires a database, <a href="/govuk_documentation_prototype/#using-a-postgresql-service">create a PostgreSQL backing service and bind it to your app</a>. Then see the section on PostgreSQL setup below.</p></li>
+<li><p>If your app requires a database, <a href="#using-a-postgresql-service">create a PostgreSQL backing service and bind it to your app</a>. Then see the section on PostgreSQL setup below.</p></li>
 <li><p>To push your app, do:</p>
 
 <p><code class="prettyprint">cf push APPNAME</code></p>
@@ -1048,11 +1048,11 @@ applications:
 
 <p>In Cloud Foundry, backing services are referred to as &lsquo;services&rsquo; and are available through the Cloud Foundry <code class="prettyprint">cf marketplace</code> command.</p>
 
-<p>Currently, the only service available is the <a href="/govuk_documentation_prototype/#using-a-postgresql-service">PostgreSQL database service</a>. </p>
+<p>Currently, the only service available is the <a href="#using-a-postgresql-service">PostgreSQL database service</a>. </p>
 
 <h2 id="paid-services">Paid services</h2>
 
-<p>Some services (including <code class="prettyprint">postgres</code>) are considered paid services. Your organization may not have the ability to use paid services enabled. Access to paid services can either be enabled or disabled based on your <a href="/govuk_documentation_prototype/#quotas">organisation quota</a>.</p>
+<p>Some services (including <code class="prettyprint">postgres</code>) are considered paid services. Your organization may not have the ability to use paid services enabled. Access to paid services can either be enabled or disabled based on your <a href="#quotas">organisation quota</a>.</p>
 
 <p>If you try to create a service and receive an error stating &ldquo;service instance cannot be created because paid service plans are not allowed&rdquo;, please contact us at <a href="gov-uk-paas-support@digital.cabinet-office.gov.uk">gov-uk-paas-support@digital.cabinet-office.gov.uk</a>.</p>
 
@@ -1148,7 +1148,7 @@ Updated: 2016-08-23T15:42:02Z
 
 <p>Your app must make a <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security">TLS</a> connection to the PostgreSQL service. Most libraries use TLS by default.</p>
 
-<p>Your app will need to parse the <code class="prettyprint">VCAP_SERVICES</code> <a href="/govuk_documentation_prototype/#environment-variables">environment variable</a> to get details of the PostgreSQL service (or use a library that does so).</p>
+<p>Your app will need to parse the <code class="prettyprint">VCAP_SERVICES</code> <a href="#environment-variables">environment variable</a> to get details of the PostgreSQL service (or use a library that does so).</p>
 
 <p>(Note that if your app is written in Ruby, the Cloud Foundry Ruby buildpack will automatically parse <code class="prettyprint">VCAP_SERVICES</code> and set DATABASE_URL to the first database found.)</p>
 

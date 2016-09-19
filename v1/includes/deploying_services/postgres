@@ -82,7 +82,7 @@ Updated: 2016-08-23T15:42:02Z
 
 <p>Your app must make a <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security">TLS</a> connection to the PostgreSQL service. Most libraries use TLS by default.</p>
 
-<p>Your app will need to parse the <code class="prettyprint">VCAP_SERVICES</code> <a href="/govuk_documentation_prototype/#environment-variables">environment variable</a> to get details of the PostgreSQL service (or use a library that does so).</p>
+<p>Your app will need to parse the <code class="prettyprint">VCAP_SERVICES</code> <a href="#environment-variables">environment variable</a> to get details of the PostgreSQL service (or use a library that does so).</p>
 
 <p>(Note that if your app is written in Ruby, the Cloud Foundry Ruby buildpack will automatically parse <code class="prettyprint">VCAP_SERVICES</code> and set DATABASE_URL to the first database found.)</p>
 

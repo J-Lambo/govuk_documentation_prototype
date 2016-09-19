@@ -4,14 +4,14 @@
 
 <p>Note that the only database service currently supported by PaaS is PostgreSQL. If your Django app requires a database, it must be able to work with PostgreSQL.</p>
 
-<p>These steps assume you have already carried out the setup process explained in the <a href="/govuk_documentation_prototype/#quick-setup-guide">Quick setup guide</a> section.</p>
+<p>These steps assume you have already carried out the setup process explained in the <a href="#quick-setup-guide">Quick setup guide</a> section.</p>
 
 <p>If you are just getting started learning CloudFoundry, you can use the sandbox space by running: <code class="prettyprint">cf target -s sandbox</code></p>
 
 <ol>
 <li><p>Check out your Django app to a local folder.</p></li>
 <li><p>Add <code class="prettyprint">*.pyc</code> and <code class="prettyprint">local_settings.py</code> to your <code class="prettyprint">.gitignore</code>, file, then 
-<a href="/govuk_documentation_prototype/#excluding-files">exclude files ignored by Git</a> so Cloud Foundry will ignore them too.</p></li>
+<a href="#excluding-files">exclude files ignored by Git</a> so Cloud Foundry will ignore them too.</p></li>
 <li><p>Tell Cloud Foundry which Python runtime to use by creating a <code class="prettyprint">runtime.txt</code>   file in the root of the local folder. The contents of the file should<br>
 be:
 <code class="prettyprint">
@@ -79,7 +79,7 @@ applications:
 <p>Replace <code class="prettyprint">my-django-app</code> with a unique name for your app. (You can use <code class="prettyprint">cf apps</code> to see apps which already exist).</p>
 
 <p>The <code class="prettyprint">memory</code> line tells the PaaS how much memory to allocate to the app.</p></li>
-<li><p>If your app requires a database, <a href="/govuk_documentation_prototype/#using-a-postgresql-service">create a PostgreSQL backing service and bind it to your app</a>. Then see the section on PostgreSQL setup below.</p></li>
+<li><p>If your app requires a database, <a href="#using-a-postgresql-service">create a PostgreSQL backing service and bind it to your app</a>. Then see the section on PostgreSQL setup below.</p></li>
 <li><p>To push your app, do:</p>
 
 <p><code class="prettyprint">cf push APPNAME</code></p>

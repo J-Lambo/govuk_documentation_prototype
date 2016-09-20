@@ -86,8 +86,10 @@ fieldset{
 
 	// 3rd level TOC items
 	.tocify-header > .tocify-item a::after{
-	    float: right;
+	    //float: right;
 	    content: "\203A";		
+	    position: absolute;
+		right: 26px;
 	}
 
     .search{

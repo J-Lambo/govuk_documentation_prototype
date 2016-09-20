@@ -1,4 +1,4 @@
-## PaaS requirements
+# PaaS requirements
 
 To be hosted by Government PaaS, your application must:
 
@@ -16,7 +16,7 @@ To be hosted by Government PaaS, your application must:
 
 Buildpacks provide runtime and framework support for your application. For most languages, you will need to provide configuration files to describe your app's dependencies. Note that most buildpacks will support a limited range of versions of the language.
 
-### 12-factor application principles
+## 12-factor application principles
 These principles were formulated by Adam Wiggins, the cofounder of the [Heroku](https://www.heroku.com/) platform. They outline practices for modern apps to follow during development to make them scalable and easy to deploy. Your app must follow these practices to work on the Cloud Foundry technology which is used by the Government PaaS.
 
 We have summarised the practices in the table below, and noted the relevance of each principle to the Government PaaS.

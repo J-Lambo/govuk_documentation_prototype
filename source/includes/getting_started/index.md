@@ -1,1 +1,1 @@
-# Getting started
+<h1 class="toc-ignore" style="font-size: 48px;">Get started</h1>

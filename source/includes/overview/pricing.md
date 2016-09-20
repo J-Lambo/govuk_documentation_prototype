@@ -1,4 +1,4 @@
-## Pricing
+# Pricing
 
 Government PaaS will initially operate using a freemium pricing model.
 
@@ -6,4 +6,8 @@ We will select underlying hosting providers with cost in mind. We can change to 
 
 Please contact us for pricing details at [gov-uk-paas-support@digital.cabinet-office.gov.uk](mailto:gov-uk-paas-support@digital.cabinet-office.gov.uk).
 
+<br>
+**[Next: Get started](get-started.html)**
+<br>
+<br>
 

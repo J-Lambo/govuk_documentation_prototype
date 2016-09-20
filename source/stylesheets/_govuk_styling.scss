@@ -25,7 +25,7 @@ fieldset{
 .tocify-wrapper {
 	position: fixed;
 	top: 107px; //below GOV.UK header
-	top: 63px; //below GOV.UK header
+	top: 93px; //below GOV.UK header
 	width: 319px;
 	@include core-16;
     border-right: 1px solid $border-colour;
@@ -353,7 +353,7 @@ input:focus {
 }
 #global-header-bar{
 	position: fixed;
-    top: 53px;
+    top: 83px;
     width: 100%;
     margin-left: 0;
     z-index: 100;
@@ -364,7 +364,7 @@ input:focus {
     z-index: 100;
 }
 .page-wrapper .content{
-	padding-top: 60px;
+	padding-top: 90px;
 	padding-left: 30px;
 }
 

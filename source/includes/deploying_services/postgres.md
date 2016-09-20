@@ -26,9 +26,10 @@ To create a service and bind it to your app:
 
     You will see output like this:
 
-    
-        service     plans                                   description
-        postgres    M-dedicated-9.5*, M-HA-dedicated-9.5*   AWS RDS PostgreSQL service
+    ```
+    service     plans                                   description
+    postgres    M-dedicated-9.5*, M-HA-dedicated-9.5*   AWS RDS PostgreSQL service
+    ```
 
 2.  Run: 
 

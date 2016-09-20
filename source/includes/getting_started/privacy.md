@@ -21,7 +21,7 @@ This data includes:
 + your mobile telephone number - which allows us to contact you about your account, and in future, support multi-factor authentication
 + your organisational role - which allows us to understand what you do, and what access you should have
 
-## How we use and share your data
+### How we use and share your data
 
 We use this information to create and administer user accounts with our platform.
 

@@ -44,6 +44,6 @@ Don’t forget to commit all your changes.
 
 From the ‘prototype-builds’ branch, type:
 
-``./deploy.sh``
+``git push -f origin prototype-builds:gh-pages``
 
-This will publish all your prototypes and the index page to https://alphagov.github.io/govuk_documentation_prototype/
+This will publish all your prototypes and the index page to [https://alphagov.github.io/govuk_documentation_prototype/](https://alphagov.github.io/govuk_documentation_prototype/)
